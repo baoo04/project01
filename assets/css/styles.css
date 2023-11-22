@@ -42,18 +42,29 @@ a {
 }
 
 /* Header */
+
+.fixed-header {
+    background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 3;
+}
+
+.fixed-header .navbar {
+    display: flex;
+    margin-left: auto;
+    padding: 20px 0;
+}
+
 .header {
     background: #e6f0ff;
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-.navbar {
-    display: flex;
-    margin-left: auto;
-    padding-top: 30px;
-    align-items: center;
-}
 
 .navbar .menu {
     display: flex;
